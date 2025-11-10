@@ -7,9 +7,7 @@ import threading
 
 app = Flask(__name__, static_folder='static')
 
-
 MODEL = "qwen2.5:14b"
-VOCAB_FILE = "ressources/voc.txt"
 
 try:
     settings = {}
@@ -22,7 +20,6 @@ try:
 
     MODEL = settings.get('MODEL') 
     print(MODEL)
-    VOCAB_FILE = settings.get('VOCAB_FILE')
 except FileNotFoundError:
     print(f"setting.txt not found")
 

@@ -1,4 +1,4 @@
-/* Variables pour changer facilement le thème */
+
 :root {
     --color-primary: #778add;
     --color-secondary: #7f5ba3;
@@ -26,7 +26,6 @@ body {
 }
 
 
-/* Header */
 .header {
     text-align: center;
     color: white;
@@ -44,7 +43,6 @@ body {
     opacity: 0.95;
 }
 
-/* Paramètres */
 .settings-container {
     max-width: 800px;
     margin: 0 auto 30px;
@@ -124,7 +122,6 @@ body {
     transform: translateY(0);
 }
 
-/* Container des exercices */
 #exo-container {
     max-width: 800px;
     margin: 0 auto;
@@ -133,7 +130,6 @@ body {
     gap: 20px;
 }
 
-/* Carte d'exercice */
 .exo {
     background: var(--color-paper);
     border-radius: 15px;
@@ -175,10 +171,8 @@ body {
   }
 }
 
-/* Input de traduction */
 .exo textarea {
     resize: none;
-    /* min-height: 50px; a été retiré */
     width: 100%;
     padding-left: 8px;
     padding-bottom: 5px;
@@ -188,10 +182,9 @@ body {
     background: transparent;
     transition: all 0.2s;
 
-    /* Nouveaux styles pour la police et la hauteur */
-    font-family: inherit; /* Utilise la police définie dans le body */
-    line-height: 1.5;    /* Définit la hauteur de ligne pour une ligne visible */
-    overflow: hidden;    /* Cache le scrollbar pour préparer l'auto-agrandissement */
+    font-family: inherit; 
+    line-height: 1.5;
+    overflow: hidden;
 }
 
 .exo textarea:focus {
@@ -206,7 +199,6 @@ body {
     display: none !important;
 }
 
-/* Chaque correction individuelle */
 .blockText {
     padding: 15px;
     border-radius: 10px;
@@ -218,7 +210,6 @@ body {
 }
 
 
-/* Titre de la correction */
 .blockText> div:first-child {
     font-weight: 700;
     font-size: 0.9em;
@@ -228,14 +219,12 @@ body {
 }
 
 
-/* Contenu de la correction */
 .blockText > div:last-child {
     font-size: 1em;
     line-height: 1.5;
     color: var(--color-text-dark);
 }
 
-/* Responsive */
 @media (max-width: 600px) {
     .header h1 {
         font-size: 2em;

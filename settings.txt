@@ -1,2 +1,1 @@
 MODEL = qwen2.5:14b
-VOCAB_FILE = ressources/voc.txt

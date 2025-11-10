@@ -94,7 +94,6 @@ class App {
             <button class="generateBtn">Générer un exercice</button>
         `;
         
-        // Attache les événements
         document.getElementById("exerciseType").addEventListener("change", () => this.updateSettings());
         document.getElementById("level").addEventListener("change", () => this.updateSettings());
         document.getElementById("themeP").addEventListener("change", () => this.updateSettings());
@@ -363,9 +362,6 @@ class TranslationExercise extends BaseExercise {
 
 }
 
-/* ============================================
-   Exercice de grammaire (plus libre)
-============================================ */
 class GrammarExercise extends BaseExercise {
     constructor(data) {
         super("grammaire");
@@ -410,7 +406,6 @@ class GrammarExercise extends BaseExercise {
             result.innerHTML = `<div class="bad">❌ Mauvaise réponse. La bonne était : ${this.options[this.correctIndex]}</div>`;
         }
 
-        // Optionnel : styliser les boutons
         this.element.querySelectorAll(".option-btn").forEach(b => {
             b.disabled = true;
             if (Number(b.dataset.index) === this.correctIndex) b.classList.add("correct");

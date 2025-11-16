@@ -1,6 +1,42 @@
 # English Trainer
 
-Application web d'entraînement à la traduction français-anglais utilisant un modèle LLM local via Ollama.
+#### Application web d'entraînement à la traduction français-anglais utilisant un modèle LLM local via Ollama comme tuteur.
+
+<img src="presentation/traduction.png" alt="exercice de traduction de texte" width="600"/>
+
+## Fonctionnalités
+#### Exercice de traduction (phrase simple)
+- **Génération de phrases** : génération d'une phrase française adaptée au niveau (B1–C2), incluant un thème grammatical principal et secondaire.
+- **Correction progressive** :
+  - Correction minimale (grammaire et orthographe)
+  - Traduction idiomatique naturelle
+  - Explications pédagogiques détaillées
+- **Personnalisation** :
+  - Choix du niveau
+  - Thème principal
+  - Thème secondaire
+
+
+#### Exercice de traduction de paragraphe
+- **Génération de paragraphes** : génération d’un paragraphe en français adapté au niveau (B1–C2), incluant un thème grammatical principal et secondaire.
+- **Correction progressive** :
+  - Correction minimale (grammaire et orthographe)
+  - Traduction idiomatique naturelle
+  - Explications pédagogiques détaillées
+- **Personnalisation** :
+  - Choix du niveau
+  - Thème principal
+  - Thème secondaire
+
+#### Exercice de grammaire
+- **Génération de phrases** : génération d’une phrase en anglais correspondant à un thème grammatical d’origine, à transformer vers un autre thème (ex : *futur simple → conditionnel*), selon le niveau (B1–C2).
+- **Correction progressive** :
+  - Correction idiomatique de la transformation
+  - Explications pédagogiques claires
+- **Personnalisation** :
+  - Choix du niveau
+  - Thème d’origine
+  - Thème d’arrivée
 
 ## Prérequis
 
@@ -29,14 +65,7 @@ python app.py
 
 L'application s'ouvre automatiquement dans le navigateur sur `http://localhost:5000`
 
-## Fonctionnalités
 
-- **Génération de phrases** : Phrases françaises générées selon un niveau (B1-C2) et des thèmes grammaticaux
-- **Correction progressive** :
-  - Correction minimale (grammaire/orthographe)
-  - Traduction native idiomatique
-  - Explications pédagogiques
-- **Personnalisation** : Choix du niveau, thème principal et secondaire
 
 ## Utilisation
 

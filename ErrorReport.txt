@@ -1,0 +1,4 @@
+wsarecv: An existing connection was forcibly closed by the remote host.
+Error: llama runner process has terminated: CUDA error
+
+-> pas assez de RAM disponible pour faire tourner le model.
